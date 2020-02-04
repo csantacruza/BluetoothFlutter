@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:navigator/firstPage.dart';
-import 'package:navigator/secondPage.dart';
+//import 'package:navigator/secondPage.dart';
+
+import 'discoveryDevice.dart';
 
 class Routes {
   static Route<dynamic> generateRoute(RouteSettings settings) {
@@ -11,7 +13,8 @@ class Routes {
       case '/second':
         if(args is Widget){
           return MaterialPageRoute(
-            builder: (_) => SecondPage(data: args),
+            builder: (_)=> DiscoveryPage(),
+            //builder: (_) => SecondPage(data: args),
           );
         }
         return _errorRoute();
