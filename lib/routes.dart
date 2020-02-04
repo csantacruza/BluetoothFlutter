@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:navigator/main.dart';
+import 'package:navigator/firstPage.dart';
+import 'package:navigator/secondPage.dart';
 
 class Routes {
   static Route<dynamic> generateRoute(RouteSettings settings) {
